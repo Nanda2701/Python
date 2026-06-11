@@ -1,0 +1,15 @@
+larg = float(input("Informe o largura da imagem: "))
+alt = float(input("Informe o altura da imagem: "))
+media_lm2 = float(input("Qual média de tinta gesta por metro quadrado?: "))
+
+#a. Área a pintar;
+area = larg * alt
+print(f"A área a pintar será de {area:.2f}")
+
+#b.Perímetro;
+perim = 2*alt + 2*larg
+print(f"o perimetro da pintura será de {perim:.2f}")
+
+#c.Quantidade de tinta que irá gastar no total da preparação da parede
+qt = media_lm2 * area
+print(f"Total aproximado de tinta gasta será de {qt:.1f}")
